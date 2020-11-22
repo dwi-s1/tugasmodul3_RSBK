@@ -15,7 +15,7 @@ class Child extends Component {
         alert(`Angka ditambahkan! angka sebelumnya: ${prevState.angka}`)
     }
     shouldComponentUpdate(nextProps, nextState) {
-        return window.confirm('Haruskah penambahan angka di-Update?');
+        return window.confirm('Apakah anda yakin ?');
     }
     componentWillUnmount() {
         alert('I will be gone :(')
