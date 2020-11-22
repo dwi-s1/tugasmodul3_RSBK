@@ -12,7 +12,7 @@ class Child extends Component {
         this.setState((state) => { return { angka: state.angka + 1 } })
     }
     componentDidUpdate(prevProps, prevState, snapshot) {
-        alert(`Angka ditambahkan! angka sebelumnya: ${prevState.angka}`)
+        alert(`Angka sebelumnya: ${prevState.angka}`)
     }
     shouldComponentUpdate(nextProps, nextState) {
         return window.confirm('Apakah anda yakin ?');
